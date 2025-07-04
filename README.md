@@ -54,12 +54,7 @@ pip install -r requirements.txt
 - haystack
 - haystack-integrations
 
-如需 GPU 支持，请参考各依赖库官方文档。
 
-## 注意事项
-
-- 路径请根据实际情况修改。
-- 大文件（如 .npy、.json、.pdf）建议不上传到 GitHub，可在 .gitignore 中配置。
 
 ---
 
