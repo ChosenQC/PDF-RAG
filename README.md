@@ -25,9 +25,9 @@ pip install -r requirements.txt
      ```bash
      python RAG_workflow/parse.py
      ```
-   - 生成的 JSON 文件将用于后续向量化。
+   - 生成的 JSON 文件将用于后续embedding。
 
-2. **文档向量化**
+2. **JSON文件向量化**
    - 修改 `embedding.py` 中 JSON 路径（`PATH_TO_YOUR_JSON.json`）和输出 embedding 路径（`PATH_TO_YOUR_EMBEDDING.npy`）。
    - 运行：
      ```bash
@@ -41,6 +41,8 @@ pip install -r requirements.txt
      python RAG_workflow/HNSW_retrieve.py
      ```
    - 控制台会输出 HNSW 和 BM25 的构建与检索时间，以及合并后的检索结果。
+   - 按照description调整HNSW 和 BM25的参数以获取需要的结果。
+   - hnswlib.Index()中space='l2' for Squared L2,'ip' for Inner product and 'cosine' for Cosine similarity.
 
 ## 依赖包说明
 
