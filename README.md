@@ -35,12 +35,12 @@ pip install -r requirements.txt
      ```
 
 3. **检索与召回**
-   - 修改 `HNSW_retrieve.py` 中 embedding 路径和 JSON 路径。
+   - 修改 `HNSW_retrieve.py` 中 embedding 路径和 JSON 路径（`PATH_TO_YOUR_JSON.json`）。
    - 运行：
      ```bash
      python RAG_workflow/HNSW_retrieve.py
      ```
-   - 控制台会输出 HNSW 和 BM25 的构建与检索时间，以及合并后的检索结果。
+   - 将输出 HNSW 和 BM25 的构建与检索时间，以及合并后的检索结果。
    - 按照description调整HNSW 和 BM25的参数以获取需要的结果。
    - hnswlib.Index()中space='l2' for Squared L2,'ip' for Inner product and 'cosine' for Cosine similarity.
 
