@@ -1,7 +1,6 @@
 import json
 import numpy as np
 from FlagEmbedding import FlagAutoModel
-from FlagEmbedding import FlagModel
 import time 
 from sklearn.metrics.pairwise import cosine_similarity
 import os
