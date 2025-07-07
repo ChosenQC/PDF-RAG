@@ -1,4 +1,3 @@
-from pymilvus import MilvusClient
 import numpy as np
 import json
 from FlagEmbedding import FlagAutoModel
