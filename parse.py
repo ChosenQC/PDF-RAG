@@ -6,12 +6,10 @@ from haystack.components.preprocessors import DocumentCleaner, DocumentSplitter
 from haystack.components.writers import DocumentWriter
 from haystack.document_stores.types import DuplicatePolicy
 from haystack.document_stores.in_memory import InMemoryDocumentStore
-from haystack_integrations.document_stores.opensearch import OpenSearchDocumentStore
 from haystack import Document, Pipeline
-from haystack_integrations.components.retrievers.opensearch import OpenSearchBM25Retriever
 import json
-start_time=time.time()
 
+start_time=time.time()
 document_store = InMemoryDocumentStore()
 
 ## Create pipeline components
@@ -34,7 +32,7 @@ indexing_pipeline.connect("splitter", "writer")
 inni_time=time.time()
 print('init_time=',inni_time-start_time)
 papers_dir = Path("PATH_TO_YOUR_PDF_DIRECTORY")  # Replace with your actual directory path
-pdf_files = list(papers_dir.glob("*.pdf"))[:100]
+pdf_files = list(papers_dir.glob("*.pdf"))
 print(len(pdf_files))
 i=0
 for pdf_file in pdf_files:    
