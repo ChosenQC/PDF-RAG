@@ -1,4 +1,4 @@
-# RAG Workflow Demo
+# PDF_RAG Workflow Demo
 
 本项目演示了基于 Haystack、FlagEmbedding、HNSWLib 和 BM25 的文档检索与向量化流程。
 
