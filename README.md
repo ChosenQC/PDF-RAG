@@ -23,7 +23,7 @@ pip install -r requirements.txt
    - Update the output JSON path（`PATH_TO_YOUR_JSON`）。
    - Run:
      ```bash
-     python RAG_workflow/parse.py
+     python PDF-RAG/parse.py
      ```
    - The generated JSON file will be used in the next embedding step.
 
@@ -31,14 +31,14 @@ pip install -r requirements.txt
    - In `embedding.py`, update the input JSON path (`PATH_TO_YOUR_JSON.json`) and the output embedding file path (`PATH_TO_YOUR_EMBEDDING.npy`).
    - Run:
      ```bash
-     python RAG_workflow/embedding.py
+     python PDF-RAG/embedding.py
      ```
 
 3. **Retrieval and Recall**
    - In `HNSW_retrieve.py`, update the embedding and JSON paths (`PATH_TO_YOUR_JSON.json`).
    - Run:
      ```bash
-     python RAG_workflow/HNSW_retrieve.py
+     python PDF-RAG/HNSW_retrieve.py
      ```
    - The script will output the construction and retrieval times for both HNSW and BM25, along with the merged retrieval results.
    - Adjust HNSW and BM25 parameters according to the descriptions to get desired results.
