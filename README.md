@@ -58,4 +58,4 @@ pip install -r requirements.txt
 
 ---
 
-如有问题欢迎提 issue！
+Feel free to open an issue if you encounter any problems!
